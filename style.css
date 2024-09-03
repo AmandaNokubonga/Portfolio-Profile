@@ -10,7 +10,7 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: #fefefe; /* Light Background */
+    background: linear-gradient(135deg, #a2c2e6, #f7d1d1); /* Baby Blue and Soft Pink Gradient */
 }
 
 /* Navbar */
@@ -127,14 +127,15 @@ body {
 }
 
 /* Gradient Backgrounds for Sections */
-.about, .experience, .projects {
+.about, .experience, .projects, .skills {
     background: linear-gradient(135deg, #a2c2e6, #f7d1d1); /* Baby Blue and Soft Pink Gradient */
     padding: 20px;
     border-radius: 8px; /* Rounded Corners */
     margin-bottom: 20px;
-    /* Remove white background from text areas */
 }
-.about .content-body, .experience .content-body, .projects .content-body {
+
+/* White Background for Content within Gradient Sections */
+.about .content-body, .experience .content-body, .projects .content-body, .skills .content-body {
     background: #ffffff; /* White Background for Text */
     padding: 20px;
     border-radius: 8px; /* Rounded Corners */
@@ -205,6 +206,10 @@ body {
 }
 .li-skills, .li-contact {
     margin-bottom: 10px;
+    background: #ffffff; /* White Background */
+    padding: 10px;
+    border-radius: 8px; /* Rounded Corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .li-contact a {
     color: #f5a4a4; /* Lighter Pink */
